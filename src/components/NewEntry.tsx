@@ -8,8 +8,8 @@ interface PlaceDetails {
 function NewEntry(props: PlaceDetails): JSX.Element {
   return (
     <>
-      <p>Image</p>
       <h2>{props.title}</h2>
+      <p>Image</p>
       <h4>
         {props.location} (<a href={props.map}>map link</a>)
       </h4>
