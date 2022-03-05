@@ -10,14 +10,14 @@ interface PlaceDetails {
 function NewEntry(props: PlaceDetails): JSX.Element {
   return (
     <>
-        <div className='entry'>
-            <h2 className="country-title">{props.title}</h2>
-            <img src={props.image} alt={props.alternate} />
-            <h4>
-                {props.location} (<a href={props.map}>map link</a>)
-            </h4>
-            <p className='description'>{props.description}</p>
-        </div>
+      <div className="entry">
+        <h2 className="country-title">{props.title}</h2>
+        <img src={props.image} alt={props.alternate} />
+        <h4>
+          {props.location} (<a href={props.map}>map link</a>)
+        </h4>
+        <p className="description">{props.description}</p>
+      </div>
     </>
   );
 }
